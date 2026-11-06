@@ -2,6 +2,10 @@
 #macro TEXT new TextAction
 // Makes it easy to define who will be speaking and when the box should change.
 #macro SPEAKER new SpeakerAction
+// Makes it possible to make choices:
+#macro CHOICE new ChoiceAction
+#macro OPTION new OptionAction
+#macro GOTO new GotoAction
 
 // Constructs the structure for one bit of dialogue
 //it's lowk just a template!
@@ -39,5 +43,43 @@ function SpeakerAction(_name, _sprite = undefined, _side = undefined): DialogueA
 		}
 		//automatically moves to next action
 		textbox.next();
+	}
+}
+
+//Defines a branch in the dialogue
+function ChoiceAction(_text) : DialogueAction() constructor {
+	text = _text;
+	
+	//Fill this with all arguments after the first one
+	options = [];
+	for (var i = 1; i < argument_count; i++) {
+		array_push(options, argument[i]);
+	}
+	
+	act = function(textbox) {
+		textbox.setText(text);
+		textbox.options = options;
+		textbox.option_count = array_length(options);
+		textbox.current_option = 0;
+	}
+}
+
+//Puts options in the option array --> text = options, topic = where the dialogue is gonna go when
+//you pick an option. A choice basically sets you on a path called topic.
+function OptionAction(_text, _topic): DialogueAction() constructor {
+	text = _text;
+	topic = _topic;
+	
+	act = function(textbox) {
+		textbox.setTopic(topic);
+	}
+}
+
+//Goes to a specific action, which allows us to get back to one convo despite different choices
+function GotoAction(_topic): DialogueAction() constructor {
+	topic = _topic;
+	
+	act = function(textbox) {
+		textbox.setTopic(topic);
 	}
 }

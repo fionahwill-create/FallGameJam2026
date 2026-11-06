@@ -3,15 +3,19 @@
 // @param topic - What topic the dialogue box should use
 function startDialogue(topic) {
 	if (instance_exists(obj_textbox))
-		return; //makes sure we don't have two textboxes running at once
+		return;
 		
 	var inst = instance_create_depth(x, y, -999, obj_textbox);
-	inst.setTopic(topic); //calls a topic to assign a dialogue piece!
+	inst.setTopic(topic);
 }
 
 function type(x, y, text, progress, width) {
 	var draw_x = 0; //changes to define where each letter should appear!
 	var draw_y = 0;
+	
+	//homemade variables for specific text placement :p
+	tx = x + 35;
+	ty = y + 35;
 	
 	//Breaking words into characters to form on a page w/ for loop!
 	for (var i = 1; i <= progress; i++) { //strings start at index one in GM, sorry for the confusion!
@@ -48,7 +52,7 @@ function type(x, y, text, progress, width) {
 		}
 		else {
 			//Make a letter form!
-			draw_text(x + draw_x, y + draw_y, char);
+			draw_text(tx + draw_x, ty + draw_y, char);
 			draw_x += string_width(char); //shift over one by the space of one character for next char to add
 		}
 	}

@@ -5,22 +5,26 @@ confirm_key = vk_space; //takes us to the next page
 max_input_delay = 5; // how many frames to ignore input
 input_delay = max_input_delay;
 
+//these control whether we pick the option up or down in decision-based dialogue
+up_key = vk_up;
+down_key = vk_down;
+
 // POSITIONING OF WORDS
 margin = 24; //how far textbox gets from edges of screen
-padding = 10; //how much space things within textbok get
-width = display_get_gui_width() - margin * 2; //based on GUI size ignoring the margin on both sides
-height = sprite_height; //based on height of textbox
+padding = 30; //how much space things within textbok get
+width = sprite_get_width(spr_descriptionbox); //based on GUI size ignoring the margin on both sides
+height = sprite_get_height(spr_descriptionbox); //based on height of textbox
 
 // POSITIONING TEXTBOX
-x = 128
+x = 832
 //(display_get_gui_width() - width) / 2;
-y = 1120
+y = 352
 //display_get_gui_height() - height - margin;
 
 // TEXT SETTINGS
 text_font = TextboxFont; //gets our font to be the ideal font!
 text_color = c_black;
-text_speed = 0.6; //how quickly does it type itself out
+text_speed = 1; //how quickly does it type itself out
 text_x = padding;
 text_y = padding;
 text_width = width - padding * 2; //max width the text can reach before the next line runs
@@ -34,6 +38,17 @@ speaker_x = padding;
 speaker_y = padding;
 speaker_font = NameboxFont;
 speaker_color = c_black;
+
+// Options
+option_x = 450;
+option_y = 500;
+option_font = OptionFont;
+option_spacing = 50;
+option_selection_indent = 24;
+option_width = 100;
+option_height = 20;
+option_text_x = 10;
+option_text_color = c_black;
 
 ///Internal variables
 /*** LOOK BUT DON'T EDIT --> VIDEO SAYS NOT TO MESS WITH ***/
@@ -59,6 +74,10 @@ enum PORTRAIT_SIDE {
 speaker_name = "";
 speaker_width = sprite_get_width(spr_namebox);
 speaker_height = sprite_get_height(spr_namebox);
+
+options = [];
+current_option = 0;
+option_count = 0;
 
 // Starting a convo:
 setTopic = function(topic) {
