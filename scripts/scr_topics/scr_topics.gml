@@ -150,6 +150,78 @@ global.topics[$ "ShinWalker"] = [
 	TEXT("(And because I can't think of anyone who would want to date you-)"),
 	//SHIN
 	SPEAKER("Shin", shin_cocky),
+	TEXT("It's surprising, I know. Again, I'm, uh, usually six feet tall and I'm a really great guy. Super dedicated feminist too- it's like my whole life. I can't even watch movies where a woman gets hurt because it makes me so angry!"),
+	//MC
+	SPEAKER("MC"),
+	TEXT("Right... how does this relate to you losing your legs?"),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("Oh, well, because I'm single- and honestly, I'm a catch- I decided to put myself out there by going to this little get-together and see if I could meet someone?"),
+	TEXT("Obviously, I immediately saw the Leg Witch, because she's a total babe if you set aside the whole leg-stealing-magic thing, but anyway... I just wanted to see if we had chemistry, you know."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("(Is he going anywhere with this or is he just gonna tell me the full story...?)"),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("I sit down and we introduce ourselves to one another. I tell her that I'm Shin and she tells me to call her Leg Witch."),
+	TEXT("That... wasn't a red flag to me at the time because I like a girl with a sense of humor, and I took it as a joke,"),
+	TEXT("All things considered it seemed like we were hitting it off, however, she had a list of questions for me- some things to ask about myself and my life to see if we were 'compatible', you could say. Around then was when everything took a nose-dive."),
+	TEXT("It didn’t matter what I told her, she was just never satisfied with my answers to any of the questions!"),
+	TEXT("Seriously, it was crazy! Despite my obvious charms and respectful nature, she didn't seem to like me and..."),
+	TEXT("After literally like... I dunno, three minutes, she just took my legs and told me that I wasn't gonna be a good fit for her."),
+	TEXT("Mind you, I didn't get to ask her any questions, she just stole my appendages and decided we were done."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("Right... So, how am I supposed to know how to talk to her if you didn’t get to learn anything about her? I mean, you never got to ask her anything, so..."),
+	//SHIN
+	SPEAKER("Shin", shin_sniffles),
+	TEXT("Seriously, it was crazy! Despite my obvious charms and respectful nature, she didn't seem to like me and..."),
+	TEXT("After literally like... I dunno, three minutes, she just took my legs and told me that I wasn't gonna be a good fit for her."),
+	SPEAKER("Shin", shin_upset),
+	TEXT("Mind you, I didn't get to ask her any questions, she just stole my appendages and decided we were done."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("Right... So, how am I supposed to know how to talk to her if you didn't get to learn anything about her? I mean, you never got to ask her anything, so..."),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("Maybe so, but the one thing I learned about her was that... well, her ideal suitor clearly isn't me."),
+	TEXT("But, I think I can help you figure out what you should say to her when you talk to her so that you don't fumble like I did."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("Ohhh, that makes sense."),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("Basically, when you sit down, the Leg Witch is gonna initiate conversation with you and it's your job to choose your words carefully so you don't get on her bad side."),
+	TEXT("If you've got a few different ideas of what to say, take a minute and think it through to gain her affection."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("(So to make her fall for me, I have to choose the right thing to say.)"),
+	TEXT("How do I know what she wants to hear?"),
+	//SHIN
+	SPEAKER("Shin", shin_sniffles),
+	TEXT("Well, uh... there's no easy way to say this, but I think a good place to start is to not talk about any of the things I brought up to her."),
+	SPEAKER("Shin", shin_cocky),
+	TEXT("I'm not her type, so even though I'm really cool, down-to-earth and in touch with my emotions, don't try to be like me."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("(Right. I'm going to assume he's trying to tell me not to brag too much about myself, my skills, or what makes me a good person.)"),
+	TEXT("(He's got a bit of an ego problem and he sort of thinks he's god's gift to women, so as long as I stay humble and show mutual interest in her, she should hear me out.)"),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("Tell you what: because I'm a fantastic guy and I'm generous with my time, I'll ask you a few first-date questions and give you a chance to respond, so you can practice choosing your responses with me."),
+	//MC
+	SPEAKER("MC"),
+	TEXT("(Make that a huge ego problem...)"),
+	TEXT("That sounds... helpful. Thanks."),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("Just try not to fall in love with me in the process, now."),
+	//NARRATION
+	SPEAKER(""),
+	TEXT("Shin winks at you with an arrogance that makes you feel a bit uncomfortable."),
+	//SHIN
+	SPEAKER("Shin", shin_cocky),
+	TEXT("Alright, first question, coming up!"),
 	GOTO("ShinChoice1")
 ];
 
@@ -181,7 +253,7 @@ global.topics[$ "Chose Performative activism"] = [
 
 global.topics[$ "ShinChoice2"] = [
 	SPEAKER("Shin", shin_cocky),
-	CHOICE("Let’s try another question. Where would you take me on a first date?",
+	CHOICE("Let's try another question. Where would you take me on a first date?",
 		OPTION("Wherever you'd like!", "GoodOption2.0"),
 		OPTION("Let me mansplain at you!", "BadOption2"),
 		OPTION("A nice dinner on me!", "GoodOption2.1"))
