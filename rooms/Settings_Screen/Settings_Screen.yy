@@ -26,8 +26,8 @@
   ],
   "name":"Settings_Screen",
   "parent":{
-    "name":"Settings",
-    "path":"folders/Settings.yy",
+    "name":"SETTINGS",
+    "path":"folders/SETTINGS.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -21,8 +21,8 @@
   ],
   "name":"Title_Screen",
   "parent":{
-    "name":"Title",
-    "path":"folders/Title.yy",
+    "name":"TITLE",
+    "path":"folders/TITLE.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
@@ -37,7 +37,7 @@
   "roomSettings":{
     "Height":768,
     "inheritRoomSettings":false,
-    "persistent":false,
+    "persistent":true,
     "Width":1366,
   },
   "sequenceId":null,
