@@ -1,4 +1,4 @@
-
-if mouse_check_button(mb_left) {
-	room_goto(Settings_Screen);
+if (mouse_check_button(mb_left)) {
+	setngs = !setngs;
+	update_settings();
 }

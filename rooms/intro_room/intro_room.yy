@@ -7,6 +7,8 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_4082D2ED","path":"rooms/intro_room/intro_room.yy",},
+    {"name":"inst_716D7405","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_5A308A50","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
