@@ -1,1 +1,2 @@
 startDialogue("ShinWalker");
+startDialogue("MeetLegWitch");
