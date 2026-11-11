@@ -19,6 +19,7 @@ switch (slider_state)
     // If the user clicks on the slider's horizontal bar
     case "idle":
         if mouse_check_button_pressed(mb_left)
+		&& mouse_y >= bbox_top && mouse_y <= bbox_bottom
         {
             // ... jump to that position on the slider bar
             slider_x = clamp(mouse_x - (button_width / 2), x, x + slider_width);

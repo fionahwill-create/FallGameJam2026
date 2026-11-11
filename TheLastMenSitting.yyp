@@ -14,7 +14,6 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"UI_OBJECTS","folderPath":"folders/UI_OBJECTS.yy","name":"UI_OBJECTS","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"INTRO_ANIMATION","folderPath":"folders/INTRO_ANIMATION.yy","name":"INTRO_ANIMATION","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -51,7 +50,7 @@
     {"id":{"name":"objdemo","path":"objects/objdemo/objdemo.yy",},},
     {"id":{"name":"returnToStart","path":"objects/returnToStart/returnToStart.yy",},},
     {"id":{"name":"settings","path":"objects/settings/settings.yy",},},
-    {"id":{"name":"slide","path":"objects/slide/slide.yy",},},
+    {"id":{"name":"slider_bar","path":"objects/slider_bar/slider_bar.yy",},},
     {"id":{"name":"sure","path":"objects/sure/sure.yy",},},
     {"id":{"name":"intro_room","path":"rooms/intro_room/intro_room.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
